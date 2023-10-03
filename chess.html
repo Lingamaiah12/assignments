@@ -5,56 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
         body{
-            margin-top: 100px;
+            margin-left: 350px;
         }
-        .container{
-            display: flex;
+        td{
+            height: 70px;
+            width: 70px;   
+            text-align: center;
+        }
+        .r1 td:nth-child(2n){
+            background-color: black;
+            color: white;
+        }
+        .r2 td:nth-child(2n+1){
+            background-color: black;
+            color: white;
+        }
+        .r3 td:nth-child(2n){
+            background-color: black
+        }
+        .r4 td:nth-child(2n+1){
+            background-color: black;
+        }
+        .r5 td:nth-child(2n){
+            background-color: black
+        }
+        .r6 td:nth-child(2n+1){
+            background-color: black;
+        }
+        .r7 td:nth-child(2n){
+            background-color: black;
+            color: white;
+        }
+        .r8 td:nth-child(2n+1){
+            background-color: black;
+            color: white;
+        }
+       
 
-        }
-        span{
-            border-radius:100%;
-            background-color: white;
-            padding: 15px;
-            gap: 10px;
 
-        }
-        .c1{
-            display: grid;
-            grid-template-columns: 6fr 6fr;
-            border: 2px solid orange;
-            padding: 10px;
-            background-color: red;
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="c1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="c1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="c3">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="c4">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
+    
+    <table border="2px">
+        <tr class="r1">
+            <td>&#9814;</td>
+            <td>&#9816;</td>
+            <td>&#9815;</td>
+            <td style="color: white; text-align: center;">&#9813;</td>
+            <td>&#9812;</td>
+            <td>&#9815;</td>
+            <td>&#9816;</td>
+            <td style="color: white;">&#9814;</td>
+        </tr>
+        <tr class="r2">
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+        </tr>
+        <tr class="r3">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="r4">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="r5">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="r6">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="r7">
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+        </tr>
+        <tr class="r8">
+            <td>&#9814;</td>
+            <td>&#9816;</td>
+            <td>&#9815;</td>
+            <td>&#9813;</td>
+            <td>&#9812;</td>
+            <td>&#9815;</td>
+            <td>&#9816;</td>
+            <td>&#9814;</td>
+        </tr>
+        
+    </table>
+    
+
+
 </body>
 </html>

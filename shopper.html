@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Shopper</title>
+    <style>
+       
+        #title-bar{
+            color: white;
+            font-size: 20px;
+        }
+        #cards{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+        header{
+            padding: 10px;
+        }
+        .navbar{
+            margin: 0px 10px 0px 10px;
+        }
+        footer {
+            background-color: black;
+            color:white;
+            font-family: Arial;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+         }
+         aside {
+            margin-top: 20px;
+         }
+         aside span {
+            margin-right: 10px;
+         }
+         .footer-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+         }
+         .footer-title~div {
+            margin-bottom: 15px;
+         }
+         address div {
+            margin-bottom: 15px;
+         }
+    </style>
+</head>
+<body class="container-fluid p-1 border-1">
+    <header class="bg-danger" id="title-bar" >
+        <div class="d-flex justify-content-between navbar">
+            <div>
+                <span><h3>Shopper</h3></span>
+            </div>
+            <div >
+                <span class="me-3">Home</span>
+                <span class="me-4">Men's Wear</span>
+                <span class="me-4">Women's Wear</span>
+                <span class="me-4">Kid's Wear</span>
+            </div>
+            <div>
+                <span class="bi bi-person me-3" >Sign In</span>
+                <span class="bi bi-cart4 me-3" id="addcart"><span id="count"></span>Cart</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/mobile-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/beauty-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/shoe-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/pic2.PNG" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <div id="cards">
+            <div class="card me-2 mt-2">
+                <div class="card-header">
+                    <span class="card-title">Shirt</span>
+                    <span class="card-subtitle">50% off</span>
+                </div>
+                <div class="card-body">
+                    <div><span><img src="../images/men.jpg" style="margin-left: 50px;"></span></div>
+                    <div><span>&#8377;<strike>1399</strike><b>&#8377;699</b></span></div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100 bi bi-cart-plus" id="cart">Add Cart</button>
+                </div>
+            </div>
+            <div class="card me-2 mt-2">
+                <div class="card-header">
+                    <span class="card-title">Jeans</span>
+                    <span class="card-subtitle">20% off</span>
+                </div>
+                <div class="card-body">
+                    <div><span><img src="../images/pant.png" style="width: 300px;"></span></div>
+                    <div><span>&#8377;<strike>1399</strike><b>&#8377;699</b></span></div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100 bi bi-cart-plus">Add Cart</button>
+                </div>
+            </div>
+            <div class="card me-2 mt-2">
+                <div class="card-header">
+                    <span class="card-title">Women dress</span>
+                    <span class="card-subtitle">15% off</span>
+                </div>
+                <div class="card-body">
+                    <div><span><img src="../images/lady.jpg" style="width: 300px; height: 320px;"></span></div>
+                    <div><span>&#8377;<strike>1899</strike><b>&#8377;1699</b></span></div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100 bi bi-cart-plus">Add Cart</button>
+                </div>
+            </div>
+            <div class="card me-2 mt-2">
+                <div class="card-header">
+                    <span class="card-title">Night wear pant</span>
+                    <span class="card-subtitle">67% off</span>
+                </div>
+                <div class="card-body">
+                    <div><span><img src="../images/night.jpeg" style="width: 300px; height: 320px;"></span></div>
+                    <div><span>&#8377;<strike>1299</strike><b>&#8377;899</b></span></div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100 bi bi-cart-plus">Add Cart</button>
+                </div>
+            </div>
+            <div class="card me-2 mt-2">
+                <div class="card-header">
+                    <span class="card-title">Short</span>
+                    <span class="card-subtitle">10% off</span>
+                </div>
+                <div class="card-body">
+                    <div><span><img src="../images/shorts.jpg" style="width: 300px; height: 300px;"></span></div>
+                    <div><span>&#8377;<strike>899</strike><b>&#8377;399</b></span></div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100 bi bi-cart-plus">Add Cart</button>
+                </div>
+            </div>
+            <div class="card me-2 mt-2">
+                <div class="card-header">
+                    <span class="card-title">Nike Shoe</span>
+                    <span class="card-subtitle">30% off</span>
+                </div>
+                <div class="card-body">
+                    <div><span><img src="../images/new-pair.avif" style="width: 300px; height: 300px;"></span></div>
+                    <div><span>&#8377;<strike>7999</strike><b>&#8377;6999</b></span></div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100 bi bi-cart-plus">Add Cart</button>
+                </div>
+            </div>
+            <div class="card me-2 mt-2">
+                <div class="card-header">
+                    <span class="card-title">Vivo Mobile</span>
+                    <span class="card-subtitle">30% off</span>
+                </div>
+                <div class="card-body">
+                    <div><span><img src="../images/vivo.PNG" style="width: 150px; margin-left: 75px;"></span></div>
+                    <div><span>&#8377;<strike>20999</strike><b>&#8377;16999</b></span></div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100 bi bi-cart-plus">Add Cart</button>
+                </div>
+            </div>
+            <div class="card me-2 mt-2">
+                <div class="card-header">
+                    <span class="card-title">Smart Watch</span>
+                    <span class="card-subtitle">50% off</span>
+                </div>
+                <div class="card-body">
+                    <div><span><img src="../images/smart-watch.avif" style="width: 300px; height: 300px;"></span></div>
+                    <div><span>&#8377;<strike>5999</strike><b>&#8377;3999</b></span></div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100 bi bi-cart-plus">Add Cart</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div>
+           <div class="brand-title">Shopper.</div>
+           <aside>
+              <span class="bi bi-facebook"></span>
+              <span class="bi bi-twitter"></span>
+              <span class="bi bi-instagram"></span>
+              <span class="bi bi-linkedin"></span>
+           </aside>
+        </div>
+        <div>
+           <div class="footer-title">SUPPORT</div>
+           <div>Contact Us</div>
+           <div>FAQs</div>
+           <div>Size Guide</div>
+           <div>Shipping & Returns</div>
+        </div>
+        <div>
+           <div class="footer-title">SHOP</div>
+           <div>Men's Shopping</div>
+           <div>Women's Shopping</div>
+           <div>Kids' Shopping</div>
+           <div>Discounts</div>
+        </div>
+        <div>
+           <div class="footer-title">COMPANY</div>
+           <div>Our Story</div>
+           <div>Careers</div>
+           <div>Terms & Conditions</div>
+           <div>Privacy & Cookie policy</div>
+        </div>
+        <div>
+           <div class="footer-title">CONTACT</div>
+           <address>
+              <div>1-202-555-0105</div>
+              <div>1-202-555-0106</div>
+              <div>help@shopper.com</div>
+           </address>
+        </div>
+     </footer>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
